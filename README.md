@@ -20,10 +20,13 @@ Both services run as **separate processes in separate terminals**.
 
 ---
 
- – **Clone the Repository**
+ – **Step 1-Clone the Repository**
 
-**Step 1- git clone https://github.com/<your-username>/cmpe273-week1-lab1.git
-cd cmpe273-week1-lab1**
+git clone <your-github-repo-url>
+cd <your-repo-directory>
+ for example:
+ git clone https://github.com/ragwort15/cmpe273-week1-lab1-starter.git
+cd cmpe273-week1-lab1-starter
 
 **Step 2 – Set Up the Python Environment**
 python3 -m venv .venv
