@@ -20,9 +20,9 @@ Both services run as **separate processes in separate terminals**.
 
 ---
 
-## **Step 1 – Clone the Repository**
+ – Clone the Repository**
 ```bash
-git clone https://github.com/<your-username>/cmpe273-week1-lab1.git
+Step 1- git clone https://github.com/<your-username>/cmpe273-week1-lab1.git
 cd cmpe273-week1-lab1
 
 Step 2 – Set Up the Python Environment
