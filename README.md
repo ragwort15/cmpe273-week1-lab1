@@ -58,3 +58,17 @@ python python-http/service_b.py
 
 Service B runs on http://127.0.0.1:8081
 
+Logging
+
+Each service logs every request with:
+
+Service name
+
+Endpoint
+
+HTTP status code
+
+Request latency (milliseconds)
+
+Service B logs an error when Service A is unreachable or times out.
+
