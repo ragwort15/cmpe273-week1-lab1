@@ -24,3 +24,17 @@ Both services run as **separate processes in separate terminals**.
 ```bash
 git clone https://github.com/<your-username>/cmpe273-week1-lab1.git
 cd cmpe273-week1-lab1
+
+Step 2 – Set Up the Python Environment
+python3 -m venv .venv
+source .venv/bin/activate   # macOS/Linux
+# OR
+.\.venv\Scripts\Activate.ps1 # Windows
+Step 3 – Start Service A (Provider)
+
+Open Terminal 1 and run:
+  python3 python-http/appA.py
+Service A runs on:
+http://127.0.0.1:8080
+
+
