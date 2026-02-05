@@ -37,4 +37,27 @@ Open Terminal 1 and run:
 Service A runs on:
 http://127.0.0.1:8080
 
+Test Service A:
+curl http://127.0.0.1:8080/health
+curl http://127.0.0.1:8080/echo?msg=hello
+
+Step 4 – Start Service B (Consumer)
+
+Open Terminal 2 and run:
+
+python3 python-http/appB.py
+
+Service B runs on:
+
+http://127.0.0.1:8081
+Test success case:
+
+curl http://127.0.0.1:8081/call-echo?msg=hello
+
+Expected:
+
+HTTP 200
+
+JSON response containing the echoed message from Service A
+
 
