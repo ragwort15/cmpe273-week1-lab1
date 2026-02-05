@@ -21,7 +21,7 @@ Both services run as **separate processes in separate terminals**.
 ---
 
  – Clone the Repository**
-```bash
+
 Step 1- git clone https://github.com/<your-username>/cmpe273-week1-lab1.git
 cd cmpe273-week1-lab1
 
