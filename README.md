@@ -72,3 +72,10 @@ Request latency (milliseconds)
 
 Service B logs an error when Service A is unreachable or times out.
 
+python3 -m venv .venv
+source .venv/bin/activate   # macOS/Linux
+# OR
+.\.venv\Scripts\Activate.ps1 # Windows
+pip install -r requirements.txt
+
+
