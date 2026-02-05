@@ -60,4 +60,41 @@ HTTP 200
 
 JSON response containing the echoed message from Service A
 
+Step 5 – Demonstrate Failure (Required)
+
+Stop Service A by pressing Ctrl + C in Terminal 1
+
+Call Service B again:
+
+curl -i http://127.0.0.1:8081/call-echo?msg=hello
+
+
+Expected:
+
+HTTP 503 Service Unavailable
+
+Error message in the response
+
+Error log printed by Service B
+
+This demonstrates independent failure: Service B remains running even when Service A is down.
+
+Logging
+
+Each service logs every request with:
+
+Service name
+
+Endpoint
+
+HTTP status code
+
+Request latency (milliseconds)
+
+Service B logs an error when Service A is unreachable or times out.
+
+What Makes This Distributed?
+
+This system is distributed because it consists of two independently running processes (Service A and Service B) that communicate over the network using HTTP. Service B depends on Service A by making an HTTP request, but each service can fail independently. When Service A is stopped, Service B remains operational and returns a 503 error while logging the failure.
+
 
