@@ -22,18 +22,16 @@ Both services run as **separate processes in separate terminals**.
 
  – **Step 1-Clone the Repository**
 
-git clone <your-github-repo-url>
-cd <your-repo-directory>
- for example:
- git clone https://github.com/ragwort15/cmpe273-week1-lab1-starter.git
+git clone  "<your-github-repo-url>"
+cd "<your-repo-directory>"
+for example:
+git clone  https://github.com/ragwort15/cmpe273-week1-lab1-starter.git
 cd cmpe273-week1-lab1-starter
 
 **Step 2 – Set Up the Python Environment**
 python3 -m venv .venv
-source .venv/bin/activate   # macOS/Linux
-# OR
-.\.venv\Scripts\Activate.ps1 # Windows
-**Step 3 – Start Service A (Provider)**
+source .venv/bin/activate   
+
 
 Open Terminal 1 and run:
   python3 python-http/appA.py
@@ -107,6 +105,24 @@ Service A :
 
 Service B:
 <img width="1404" height="657" alt="image" src="https://github.com/user-attachments/assets/e703b45e-58fc-47c2-8be9-91f807291820" />
+
+<img width="1296" height="556" alt="image" src="https://github.com/user-attachments/assets/96ca5105-28d6-4a08-abb0-7c83518e0f17" />
+
+**Stopped Terminal A:**
+
+<img width="1265" height="625" alt="image" src="https://github.com/user-attachments/assets/bd18f5fa-e97b-4c6f-b215-807577955e1f" />
+
+**Error message on terminal B**
+- opened a new terminal with command curl -i "http://127.0.0.1:8081/call-echo?msg=hello"
+
+- <img width="1276" height="568" alt="image" src="https://github.com/user-attachments/assets/0b3ba1e7-1c44-43ee-81f6-e0a1d803746d" />
+
+
+<img width="1440" height="539" alt="image" src="https://github.com/user-attachments/assets/234fead0-d745-4225-947d-49528130d754" />
+
+
+
+
 
 
 
